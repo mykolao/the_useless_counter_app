@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  max-width: 900px;
+  height: 100%;
+  margin: auto;
+  padding: 0px 12px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
   color: white;
+  font-size: 32px;
+  line-height: 75px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  padding-top: 96px;
 }
 
-.App-link {
-  color: #61dafb;
+.counter {
+  font-weight: bold;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.group-btn {
+  text-align: center;
+  padding-bottom: 128px;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #171111;
+  border: none;
+  padding: 14px 24px 14px 24px;
+  cursor: pointer;
+}
+
+.increase-btn {
+  background: #80E220;
+  border-radius: 0px 40px 40px 0px;
+}
+
+.decrease-btn {
+  background: #DF1125;
+  border-radius: 40px 0px 0px 40px;
+}
+
+@media only screen and (max-width: 570px) {
+  .header {
+    padding-top: 48px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 470px) {
+  .header {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .header {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 24px;
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .header {
+    padding-top: 24px;
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 8px 18px 8px 18px;
   }
 }
